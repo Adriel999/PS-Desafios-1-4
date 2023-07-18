@@ -4,7 +4,9 @@ import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
 public class SegundoDesafio {
+	
     public static void main(String[] args) {
+    	
         try (Scanner scanner = new Scanner(System.in)) {
 			System.out.print("Digite o valor monetário: ");
 			String valorStr = scanner.nextLine();
@@ -51,10 +53,10 @@ public class SegundoDesafio {
 			    moedas %= 5;
 			    System.out.printf("%d moeda(s) de R$ 0.01%n", moedas);
 			    
-			} catch (NumberFormatException e) {
-			    System.out.println("Entrada inválida! O valor monetário deve ser um número de ponto flutuante "
-			    		+ "(utilize '.' ao invés de ',' para números não-inteiros).");
-			}
+        } catch (NumberFormatException e) {
+        	System.out.println("Entrada inválida! O valor monetário deve ser um número de ponto flutuante "
+        			+ "(utilize '.' ao invés de ',' para números não-inteiros).");
 		}
-    }
+	}
+}
 
